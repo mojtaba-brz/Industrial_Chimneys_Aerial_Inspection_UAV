@@ -1,0 +1,4 @@
+#ifndef RTW_HEADER_Animation_Recorder_types_h_
+#define RTW_HEADER_Animation_Recorder_types_h_
+typedef struct euzvfop5b3 bjkq0rekm5 ;
+#endif

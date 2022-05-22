@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/24/22||13:16:44" using="Simscape Multibody Link Version 7.0" from="SolidWorks 27.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Flange_gate" uid="Flange_gate" version="153">
+<AssemblyFile name="Flange_gate.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="flange_gate-1" uid="flange_gate-1" entityUid="flange_gate*:*Default">
+<Transform>
+<Rotation>1 0 0 0 0.87779493055185931 -0.47903659557225536 0 0.47903659557225536 0.87779493055185931</Rotation>
+<Translation>0.027447867620732799 0.10770925419240515 0.23663890908337853</Translation>
+</Transform>
+</Instance>
+<Instance name="flange-1" uid="flange-1" grounded="true" entityUid="flange*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.045947867620732802 0.12232502770353913 0.2564675420023923</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>flange-1</Uid>
+</InstancePath>
+<Position>-0.072000999999999982 0.016785464821243337 -0.0032617312414746635</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>flange_gate-1</Uid>
+</InstancePath>
+<Position>0.016500000000000001 0.035500000000000004 -0.00049999999999994493</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>flange_gate-1</Uid>
+</InstancePath>
+<Position>0.016500000000000001 0.035500000000000004 -0.00049999999999994493</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>flange-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="flange" uid="flange*:*Default" version="172">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="flange.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.2289213551574866</Mass>
+<CenterOfMass>2.1418870453515131e-07 5.1078221379731537e-05 -0.062516718639853003</CenterOfMass>
+<Inertia>0.0011514920128535319 0.0011512970808339336 0.00029164984013787311 -6.9977572372951981e-07 5.0879276261282838e-10 -9.4344515078884367e-10</Inertia>
+</MassProperties>
+<GeometryFile name="flange_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="flange_gate" uid="flange_gate*:*Default" version="193">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="flange_gate.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0058761651152713125</Mass>
+<CenterOfMass>0.018499999999999999 0.017399568547751113 0.00096608688893615549</CenterOfMass>
+<Inertia>4.9743811493496172e-07 5.3004123745249155e-07 1.0224782960788518e-06 3.6153897317147674e-09 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="flange_gate_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

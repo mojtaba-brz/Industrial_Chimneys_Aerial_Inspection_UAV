@@ -1,0 +1,4 @@
+#ifndef RTW_HEADER_Robotic_Arm_controller_types_h_
+#define RTW_HEADER_Robotic_Arm_controller_types_h_
+typedef struct ldv0pnua5t gswfjeekl2 ;
+#endif
